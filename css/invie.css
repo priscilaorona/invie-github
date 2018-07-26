@@ -179,11 +179,15 @@ input:focus, textarea:focus {
 
 .menu li {
   display: inline-block;
-  margin-left: 30px;
+  margin: 0 10px;
+  list-style-type: none;
 }
 
+.menu li:after{
+  color: white;
+  content: "|";
+}
 .menu li:before{
-  content: '∘';
   font-size: 50px;
   line-height: 20px;
   color: white;
@@ -192,6 +196,8 @@ input:focus, textarea:focus {
 .menu a {
   color: white;
   text-decoration: none;
+  font-size: 15px;
+  right: 2%;
 }
 
 .logotipo {
@@ -339,10 +345,95 @@ input:focus, textarea:focus {
   border: 5px solid #3c5b6e;
 }
 
+
 .video-demo-contenedor {
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
+}
+
+.productos {
+  background: #efefef;
+  padding: 0;
+  margin: 0;
+}
+.portada {
+  position: relative;
+}
+.portada .descripcion {
+  background: black;
+  position: absolute;
+  opacity: .5;
+  bottom: 380px;
+  left: 20px; 
+  padding: 20px;
+}
+
+.portada .descripcion h1 {
+  margin: 0;
+  font-weight: 600;
+  border-bottom: 1px solid #515151;
+  bottom:  420px;
+  font-size:  22px;
+  padding: 0.455em 0 0.909em;
+  left: 20px;
+}
+.blog {
+  width: 1000px;
+  margin: 0 auto;
+}
+.blog-item {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.portada .descripcion p {
+  padding: 0;
+  margin: 10px 0;
+  color: #515151;
+}
+.item-blog{
+  margin: 0;
+}
+
+.item-blog h3{
+  margin: 5px 0;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  font-weight: 500;
+  padding: 0.455em 0 0.909em;
+}
+
+.descripcion p{
+  padding: 0;
+  margin: 5px 0;
+  color: #000000;
+}
+
+.blog-item img {
+ width: 230px;
+ height: 300px;
+ border: 1px solid #1F313C;
+ margin: 40px 0 10px 0; 
+ cursor: pointer;
+}
+
+.blog-item h1{
+  display: inline-block;
+  position: absolute;
+  margin-top: -25px;
+}
+
+.transicion{
+  transition: .3s;
+}
+
+.same-height:hover{
+  transform: scale(.9) translateX(3px);;
 }
 
 @media screen and (max-width: 800px) {
@@ -409,7 +500,6 @@ input:focus, textarea:focus {
     padding: 0;
   }
   /* guitarras */
-
 }
 
 @media screen and (max-width: 767px) {

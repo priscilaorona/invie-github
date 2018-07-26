@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Precios de tus mejores guitarras!!</title>
+    <title>Los productos que ofrecemos!!</title>
     <meta charset="utf-8"/>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/invie.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   </head>
-  <body class="precios">
+  <body class="productos">
     <header id="header" class="header background"> <!-- header -->
       <div class="contenedor">
         <figure class="logotipo"> <!-- logotipo -->
@@ -32,70 +32,79 @@
         </nav>
       </div>
     </header>
-    <section class="tabla">
-      <div class="contenedor">
-        <table>
-          <thead>
-            <tr>
-              <th>Modelo</th>
-              <th>Precio</th>
-              <th>Material</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Inferno</td>
-              <td>$41.159</td>
-              <td>Madera de Roble</td>
-            </tr>
-            <tr>
-              <td>Spider</td>
-              <td>$35.699</td>
-              <td>Madera de pino</td>
-            </tr>
-            <tr>
-              <td>Stars</td>
-              <td>$25.849</td>
-              <td>Madera de roble blanco con apliques brillosos</td>
-            </tr>
-            <tr>
-              <td>Pacific</td>
-              <td>$15.799</td>
-              <td>Madera de haya con pintura sintetica antirayones</td>
-            </tr>
-            <tr>
-              <td>Black Heavy</td>
-              <td>$20.599</td>
-              <td>Madera de roble con bordes metalicos</td>
-            </tr>
-            <tr>
-              <td>Rock Jean</td>
-              <td>$8.999</td>
-              <td>Madera de maple con cuerdas de cobre</td>
-            </tr>
-            <tr>
-              <td>Future is now</td>
-              <td>$55.000</td>
-              <td>Madera de pino con bordes metalicos, con cuerdas de cobre </td>
-            </tr>
-            <tr>
-              <td>Angel</td>
-              <td>$37.789</td>
-              <td>Madera de roble blanco, con cuerdas de cobre y detalles en su mango</td>
-            </tr>
-            <tr>
-              <td>Fire</td>
-              <td>$28.695</td>
-              <td>Madera de pino, con cuerdas plasticas</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <section class="blog">
+      <article class="portada">
+        <img src="images/fire.jpg" alt="fire" width="1000">
+        <div class="descripcion">
+          <h1>La  guitarra mas vendida!! </h1>
+          <p>Modelo "Fire" - 2018</p>
+        </div>
+      </article>
     </section>
-    <footer class="footer">
+    <section class="blog-item">
+         <h1>Nuestras opciones para vos:</h1>
+        <article class="item-blog">
+        <img src="images/inferno.png" alt="inferno" class="transicion same-height"> 
+        <div class="descripcion">
+          <h3>Guitarra "Inferno"</h3>
+          <p>Cod: 5001</p>
+        </div>
+        </article>
+        <article class="item-blog">
+        <img src="images/spider.jpg " alt="spider" class="transicion same-height">
+        <div class="descripcion">
+          <h3>Guitarra "Spider"</h3>
+          <p>Cod: 5001</p>
+        </div>
+        </article>
+        <article class="item-blog">
+        <img src="images/stars.jpg " alt="stars" class="transicion same-height">
+        <div class="descripcion">
+          <h3>Guitarra "Stars"</h3>
+          <p>Cod: 5003</p>
+        </div>
+        </article>
+        <article class="item-blog">
+        <img src="images/pacific.jpg " alt="pacific" class="transicion same-height">
+        <div class="descripcion">
+          <h3>Guitarra "Pacific"</h3>
+          <p>Cod: 5004</p>
+        </div>
+        </article>
+         </article>
+        <article class="item-blog">
+        <img src="images/blackheavy.jpg " alt="black heavy" class="transicion same-height">
+        <div class="descripcion">
+          <h3>Guitarra "Black Heavy"</h3>
+          <p>Cod: 5005</p>
+        </div>
+        </article>
+         <article class="item-blog">
+        <img src="images/rock jean.jpg " alt="rock jean" class="transicion same-height">
+        <div class="descripcion">
+          <h3>Guitarra "Rock Jean"</h3>
+          <p>Cod: 5006</p>
+        </div>
+        </article>
+          <article class="item-blog">
+        <img src="images/futureisnow.jpg " alt="future is now" class="transicion same-height">
+        <div class="descripcion">
+          <h3>Guitarra "Future is Now"</h3>
+          <p>Cod: 5007</p>
+        </div>
+        </article>
+        <article class="item-blog">
+        <img src="images/angel.jpg " alt="angel" class="transicion same-height" >
+        <div class="descripcion">
+          <h3>Guitarra "Angel"</h3>
+          <p>Cod: 5008</p>
+        </div>
+        </article>
+      </section>
+      <footer class="footer">
       <div class="contenedor">
         <div class="contacto">
-          <img src="images/invie-white.png" alt="logotipo blanco"/>
+          <img data-src="images/invie-white.png|images/invie-white2x.png" alt="logotipo blanco"/>
           <a href="tel:+573024456678"><strong>Telefono</strong> <span>3024456678</span></a>
           <a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@invie.com</span></a>
         </div>
@@ -136,6 +145,7 @@
         </form>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
     <script>
       var consulta = window.matchMedia('(max-width: 500px)');
@@ -145,6 +155,12 @@
       var $menu = document.getElementById('menu');
       function toggleMenu(){
         $menu.classList.toggle('active')
+      };
+      function showMenu(){
+        $menu.classList.add('active');
+      };
+      function hideMenu(){
+        $menu.classList.remove('active');
       };
 
       function mediaQuery() {
@@ -169,6 +185,13 @@
       // function toggleMenu(){
       //   $menu.classList.toggle('active')
       // };
+
+      // Gestos touch
+      var $body = document.body;
+
+      var gestos = new Hammer($body);
+      gestos.on('swipeleft', hideMenu);
+      gestos.on('swiperight', showMenu);
     </script>
   </body>
-</html>
+  </html>
